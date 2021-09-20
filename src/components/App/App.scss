@@ -27,3 +27,16 @@
     grid-template-columns: repeat(9, 1fr);
 
 }
+
+.Face{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    font-size: 35px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white #7b7b7b  #7b7b7b white;
+    cursor: pointer;
+}
