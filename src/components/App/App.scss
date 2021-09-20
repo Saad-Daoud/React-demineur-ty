@@ -1,27 +1,30 @@
+@import "../../styles/index.scss";
+
 .App {
+    @include borders(white, #999);
+    //mixing scss
+    // border-width: 4px;
+    // border-style: solid;
+    // border-color: white #999 #999 white;
     background: #c2c2c2;
     padding: 16px;
-    border-width: 4px;
-    border-style: solid;
-    border-color: white #999 #999 white;
+
 }
 
 .Header{
-    background: #C0C0C0;
+    @include borders;
+    background: #C0C0C0; 
     padding: 10px 12px;
-    border-width: 4px;
-    border-style: solid;
-    border-color: #7b7b7b white white #7b7b7b;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .Body{
+    @include borders;
     margin-top: 16px;
-    border-width: 4px;
-    border-style: solid;
-    border-color: #7b7b7b white white #7b7b7b;
+    
     display: grid;
     grid-template-rows: repeat(9, 1fr);
     grid-template-columns: repeat(9, 1fr);
@@ -29,14 +32,13 @@
 }
 
 .Face{
+    @include borders(white, #7b7b7b);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 52px;
     height: 52px;
     font-size: 35px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: white #7b7b7b  #7b7b7b white;
+
     cursor: pointer;
 }
